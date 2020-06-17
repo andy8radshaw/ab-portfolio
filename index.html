@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/fullpage.css" />
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="text/javascript" src="scripts/fullpage.js"></script>
+  <title>// Andy Bradshaw</title>
+</head>
+
+<body>
+
+  <div id="fullpage">
+
+    <div class="section">
+      <section class="home">
+        <h1><span>//</span> Andy Bradshaw</h1>
+        <h1><span>//</span> Junior Software Engineer</h1>
+        <h1><span>//</span> London.</h1>
+      </section>
+    </div>
+
+    <div class="section">
+      <section class="about">
+        <h1><span>//</span> About</h1>
+      </section>
+    </div>
+
+    <div class="section">
+      <section class="portfolio">
+        <h1><span>//</span> Portfolio</h1>
+
+      </section>
+    </div>
+
+    <div class="section">
+      <section class="contact">
+        <h1><span>//</span> Contact</h1>
+      </section>
+    </div>
+
+  </div>
+
+  <script>
+    new fullpage('#fullpage', {
+      //options here
+      menu: '#menu',
+      lockAnchors: false,
+      anchors: ['Home', 'About', 'Portfolio', 'Contact'],
+      navigation: true,
+      navigationPosition: 'right',
+      navigationTooltips: ['Home', 'About', 'Portfolio', 'Contact'],
+      showActiveTooltip: true,
+      slidesNavigation: false,
+      slidesNavPosition: 'bottom',
+      autoScrolling: true,
+      scrollHorizontally: true,
+      scrollingSpeed: 800
+    });
+
+    //methods
+    fullpage_api.setAllowScrolling(true);
+  </script>
+
+</body>
+
+</html>

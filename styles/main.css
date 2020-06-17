@@ -1,0 +1,46 @@
+body {
+  background-image: url("../assets/background-1.png");
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: "Cutive Mono", monospace;
+}
+
+h1 {
+  margin: 0;
+}
+
+span {
+  color: #f07167;
+}
+
+section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  flex-direction: column;
+  height: 90vh;
+  width: 100vw;
+  padding: 1em;
+}
+
+.home {
+  background-color: black;
+  color: white;
+}
+
+.about {
+  width: 100vw;
+  background-color: white;
+}
+
+.portfolio {
+  background-color: black;
+  color: white;
+}
+
+.contact {
+  background-color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
