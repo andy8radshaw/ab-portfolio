@@ -47,15 +47,20 @@
   <script>
     new fullpage('#fullpage', {
       //options here
+
+      // navigation
       menu: '#menu',
       lockAnchors: false,
       anchors: ['Home', 'About', 'Portfolio', 'Contact'],
       navigation: true,
       navigationPosition: 'right',
       navigationTooltips: ['Home', 'About', 'Portfolio', 'Contact'],
-      showActiveTooltip: true,
+      showActiveTooltip: false,
       slidesNavigation: false,
       slidesNavPosition: 'bottom',
+
+      // scrolling
+      dragAndMove: false,
       autoScrolling: true,
       scrollHorizontally: true,
       scrollingSpeed: 800

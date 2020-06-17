@@ -26,6 +26,10 @@ section {
   height: 90vh;
   width: 100vw;
   padding: 1em;
+  @media screen and (max-width:500px) {
+    height: 78vh;
+    font-size: 12px;
+  }
 }
 
 .home {
