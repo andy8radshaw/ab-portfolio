@@ -235,10 +235,19 @@ html.fp-enabled,
     border: 0;
 }
 
+#fp-nav > ul > li:nth-child(1) > div {
+  font-family: "Cutive Mono", monospace;
+}
+
 #fp-nav > ul > li:nth-child(2) > div {
   color: black;
+  font-family: "Cutive Mono", monospace;
+}
+#fp-nav > ul > li:nth-child(3) > div {
+  font-family: "Cutive Mono", monospace;
 }
 
 #fp-nav > ul > li:nth-child(4) > div {
   color: black;
+  font-family: "Cutive Mono", monospace;
 }

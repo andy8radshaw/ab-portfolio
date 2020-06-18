@@ -19,14 +19,20 @@ section {
   justify-content: flex-start;
   align-items: left;
   flex-direction: column;
-  height: 90vh;
+  height: 84vh;
   width: 100vw;
   padding: 1em;
+}
+section p {
+  width: 50vw;
 }
 @media screen and (max-width: 500px) {
   section {
     height: 78vh;
     font-size: 12px;
+  }
+  section p {
+    width: 90%;
   }
 }
 

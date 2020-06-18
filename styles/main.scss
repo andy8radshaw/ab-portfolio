@@ -23,18 +23,25 @@ section {
   justify-content: flex-start;
   align-items: left;
   flex-direction: column;
-  height: 90vh;
+  height: 84vh;
   width: 100vw;
   padding: 1em;
+  p {
+    width: 50vw;
+  }
   @media screen and (max-width:500px) {
     height: 78vh;
     font-size: 12px;
+    p {
+      width: 90%;
+    }
   }
 }
 
 .home {
   background-color: black;
   color: white;
+  
 }
 
 .about {
