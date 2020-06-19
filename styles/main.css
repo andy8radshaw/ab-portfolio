@@ -1,17 +1,17 @@
 body {
-  background-image: url("../assets/background-1.png");
+  background-image: url("../assets/background-2.png");
   background-position: center;
   background-attachment: fixed;
   margin: 0;
   font-family: "Cutive Mono", monospace;
 }
 
-h1 {
-  margin: 0;
-}
-
 span {
   color: #f07167;
+}
+
+nav {
+  background-color: #f07167;
 }
 
 section {
@@ -21,15 +21,22 @@ section {
   flex-direction: column;
   height: 84vh;
   width: 100vw;
-  padding: 1em;
+}
+section h1 {
+  margin: 0;
+  padding: 20px 0 0 20px;
 }
 section p {
   width: 50vw;
+  padding: 20px 0 0 20px;
 }
 @media screen and (max-width: 500px) {
   section {
     height: 78vh;
     font-size: 12px;
+  }
+  section h1 {
+    padding: 10px 0 0 10px;
   }
   section p {
     width: 90%;
@@ -42,13 +49,66 @@ section p {
 }
 
 .about {
-  width: 100vw;
   background-color: white;
+}
+.about .section-main {
+  margin-right: 10vw;
+}
+.about .section-main .technologies {
+  margin: 20px;
+  color: #f07167;
+  font-size: 50px;
+}
+@media screen and (max-width: 500px) {
+  .about .section-main .technologies {
+    font-size: 20px;
+  }
 }
 
 .portfolio {
   background-color: black;
   color: white;
+}
+.portfolio .section-main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio .section-main .grid {
+  display: grid;
+  grid-template-columns: 35vw 35vw;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.portfolio .section-main .grid .project {
+  width: 100%;
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 500px) {
+  .portfolio .section-main .grid {
+    grid-template-columns: 74vw;
+  }
+  .portfolio .section-main .grid .project {
+    height: 10vh;
+  }
+}
+.portfolio .section-main .grid .proj-one {
+  background-image: url("../assets/jobr.png");
+}
+.portfolio .section-main .grid .proj-two {
+  background-image: url("../assets/hikr.png");
+}
+.portfolio .section-main .grid .proj-three {
+  background-image: url("../assets/dinder.png");
+}
+.portfolio .section-main .grid .proj-four {
+  background-image: url("../assets/battleships.png");
 }
 
 .contact {

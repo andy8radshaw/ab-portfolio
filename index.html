@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Special+Elite&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" type="text/css" href="styles/fullpage.css" />
   <link rel="stylesheet" href="styles/main.css">
-  <script type="text/javascript" src="scripts/fullpage.js"></script>
+  <script type="text/javascript" src="scripts/fullpage.extensions.min.js"></script>
   <script type="text/javascript" src="scripts/app.js"></script>
   <title>// Andy Bradshaw</title>
 </head>
@@ -16,33 +17,35 @@
 <body>
 
   <div id="fullpage">
-    
 
     <div class="section">
       <section class="home">
         <div class="section-header">
           <h1><span>//</span> Andy Bradshaw</h1>
           <h1><span>//</span> Junior Software Engineer</h1>
-          <h1><span>//</span> London.</h1>
+          <h1><span>//</span> London<span class="full-stop">.</span></h1>
         </div>
         <div class="section-main">
         </div>
       </section>
     </div>
-    
+
     <div class="section">
       <section class="about">
         <div class="section-header">
           <h1><span>//</span> About</h1>
         </div>
         <div class="section-main">
-          <p>Recently completed the fully immersive Software Engineering course at General Assembly in London. After 10 years working in the Audio industry, I decided I wanted to let my creative and problem solving tendancies flourish with a change in career direction. However, if you're here and you need some advice on how to make your office/stadium/shop/church sound good then I will happily help!</p>
-          <p>Over the past 4 months I have gained experience in:</p>
-          <div>
+          <p>I recently completed the fully immersive Software Engineering course at General Assembly in London. After 10
+            years working in the Audio industry, I decided I wanted to let my creative and problem solving tendancies
+            flourish with a change in career direction.</p>
+          <p>I am currently looking for my first Junior role in Software Engineering. Over the past 4 months I have gained experience in a range of modern technologies and have a passion for clean code and learning new things! Download a copy of my CV <strong>here</strong></p>
+
+          <p>technologies used:</p>
+          <div class="technologies">
             <i class="devicon-html5-plain"></i>
             <i class="devicon-css3-plain"></i>
             <i class="devicon-javascript-plain"></i>
-            <i class="devicon-react-original"></i>
             <i class="devicon-react-original"></i>
             <i class="devicon-chrome-plain"></i>
             <i class="devicon-django-plain"></i>
@@ -62,54 +65,38 @@
         </div>
       </section>
     </div>
-    
+
     <div class="section">
       <section class="portfolio">
         <div class="section-header">
           <h1><span>//</span> Portfolio</h1>
         </div>
-        <div class="section-main"></div>
+        <div class="section-main">
+          <div class="grid">
+            <div class="project proj-one"></div>
+            <div class="project proj-two"></div>
+            <div class="project proj-three"></div>
+            <div class="project proj-four"></div>
+          </div>
+
+        </div>
       </section>
     </div>
-    
+
     <div class="section">
       <section class="contact">
         <div class="section-header">
           <h1><span>//</span> Contact</h1>
         </div>
-        <div class="section-main"></div>
+        <div class="section-main">
+          <p>email: andy8radshaw@gmail.com</p>
+          <p>phone: 07866364895</p>
+          <p>address: SE14, London </p>
+        </div>
       </section>
     </div>
 
-    <div class="section fp-auto-height">Footer</div>
-
   </div>
-
-  <script>
-    new fullpage('#fullpage', {
-
-      // navigation
-      menu: '#menu',
-      lockAnchors: false,
-      anchors: ['Home', 'About', 'Portfolio', 'Contact'],
-      navigation: true,
-      navigationPosition: 'right',
-      navigationTooltips: ['Home', 'About', 'Portfolio', 'Contact'],
-      showActiveTooltip: true,
-      slidesNavigation: false,
-      slidesNavPosition: 'bottom',
-
-      // scrolling
-      dragAndMove: false,
-      autoScrolling: true,
-      scrollHorizontally: true,
-      scrollingSpeed: 800
-    });
-
-    //methods
-    fullpage_api.setAllowScrolling(true);
-  </script>
-
 </body>
 
 </html>

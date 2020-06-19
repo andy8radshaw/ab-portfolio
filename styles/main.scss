@@ -1,20 +1,18 @@
 body {
-  background-image: url("../assets/background-1.png");
+  background-image: url("../assets/background-2.png");
   background-position: center;
   background-attachment: fixed;
   margin: 0;
   font-family: "Cutive Mono", monospace;
 }
 
-h1 {
-  margin: 0;
-}
-
 span {
   color: #f07167;
 }
 
-
+nav {
+  background-color: #f07167;
+}
 
 // sections
 
@@ -25,13 +23,20 @@ section {
   flex-direction: column;
   height: 84vh;
   width: 100vw;
-  padding: 1em;
+  h1 {
+    margin: 0;
+    padding: 20px 0 0 20px;
+  }
   p {
     width: 50vw;
+    padding: 20px 0 0 20px;
   }
-  @media screen and (max-width:500px) {
+  @media screen and (max-width: 500px) {
     height: 78vh;
     font-size: 12px;
+    h1 {
+      padding: 10px 0 0 10px;
+    }
     p {
       width: 90%;
     }
@@ -41,17 +46,65 @@ section {
 .home {
   background-color: black;
   color: white;
-  
 }
 
 .about {
-  width: 100vw;
   background-color: white;
+  .section-main {
+    margin-right: 10vw;
+    .technologies {
+      margin: 20px;
+      color: #f07167;
+      font-size: 50px;
+      @media screen and (max-width: 500px) {
+        font-size: 20px;
+      }
+    }
+  }
 }
 
 .portfolio {
   background-color: black;
   color: white;
+  .section-main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .grid {
+      display: grid;
+      grid-template-columns: 35vw 35vw;
+      column-gap: 30px;
+      row-gap: 30px;
+      .project {
+        width: 100%;
+        height: 30vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+      }
+      @media screen and (max-width: 500px) {
+        grid-template-columns: 74vw;
+        .project {
+          height: 10vh;
+        }
+      }
+      .proj-one {
+        background-image: url("../assets/jobr.png");
+      }
+      .proj-two {
+        background-image: url("../assets/hikr.png");
+      }
+      .proj-three {
+        background-image: url("../assets/dinder.png");
+      }
+      .proj-four {
+        background-image: url("../assets/battleships.png");
+      }
+    }
+  }
 }
 
 .contact {

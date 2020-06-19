@@ -251,3 +251,20 @@ html.fp-enabled,
   color: black;
   font-family: "Cutive Mono", monospace;
 }
+
+@media screen and (max-width:500px) {
+  #fp-nav > ul > li:nth-child(1) > div {
+    display: none;
+  }
+  
+  #fp-nav > ul > li:nth-child(2) > div {
+    display: none;
+  }
+  #fp-nav > ul > li:nth-child(3) > div {
+    display: none;
+  }
+  
+  #fp-nav > ul > li:nth-child(4) > div {
+    display: none;
+  }
+}
