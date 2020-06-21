@@ -12,10 +12,9 @@ function init() {
     navigationPosition: 'right',
     navigationTooltips: ['Home', 'About', 'Portfolio', 'Contact'],
     showActiveTooltip: true,
-    slidesNavigation: true,
+    slidesNavigation: false,
 
     // scrolling
-    dragAndMove: true,
     autoScrolling: true,
     scrollingSpeed: 1000,
     controlArrows: false,
@@ -25,9 +24,6 @@ function init() {
     animateAnchor: false
     // menu
   })
-
-
-
 
   //methods
   // eslint-disable-next-line no-undef
