@@ -1,5 +1,8 @@
 function init() {
 
+  const fullPageKey = config.FULL_PAGE_KEY
+  console.log(fullPageKey)
+  
   // eslint-disable-next-line no-undef
   new fullpage('#fullpage', {
 
