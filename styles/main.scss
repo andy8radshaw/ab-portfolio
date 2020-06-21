@@ -11,7 +11,13 @@ span {
 }
 
 nav {
-  background-color: #f07167;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  background-color: transparent;
+  top: 0px;
+  position: absolute;
+  z-index: 999;
 }
 
 // sections
@@ -105,6 +111,11 @@ section {
       }
     }
   }
+}
+
+.project-show {
+  background-color: black;
+  color: white;
 }
 
 .contact {

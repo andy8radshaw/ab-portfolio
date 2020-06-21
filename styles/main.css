@@ -11,7 +11,13 @@ span {
 }
 
 nav {
-  background-color: #f07167;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  background-color: transparent;
+  top: 0px;
+  position: absolute;
+  z-index: 999;
 }
 
 section {
@@ -109,6 +115,11 @@ section p {
 }
 .portfolio .section-main .grid .proj-four {
   background-image: url("../assets/battleships.png");
+}
+
+.project-show {
+  background-color: black;
+  color: white;
 }
 
 .contact {
