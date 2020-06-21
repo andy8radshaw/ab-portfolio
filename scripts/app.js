@@ -1,12 +1,12 @@
 function init() {
 
   // eslint-disable-next-line no-undef
-  const fullPageKey = config.FULL_PAGE_KEY
+  // const fullPageKey = config.FULL_PAGE_KEY
   
   // eslint-disable-next-line no-undef
   new fullpage('#fullpage', {
 
-    licenseKey: fullPageKey,
+    // licenseKey: fullPageKey,
     // navigation
     menu: '#myMenu',
     lockAnchors: false,
@@ -19,7 +19,7 @@ function init() {
 
     // scrolling
     autoScrolling: true,
-    scrollingSpeed: 1000,
+    scrollingSpeed: 700,
     controlArrows: false,
 
     // Accessibility
