@@ -121,8 +121,42 @@ section p {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
   border-radius: 3px;
 }
-.portfolio .section-main .grid .project:hover {
-  box-shadow: 0 0 20px #f07167;
+.portfolio .section-main .grid .project .hover-content {
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  transition: 0.5s;
+}
+.portfolio .section-main .grid .project .hover-content h2 {
+  display: none;
+  margin: 0;
+  padding: 20px;
+}
+@media screen and (max-width: 500px) {
+  .portfolio .section-main .grid .project .hover-content h2 {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+.portfolio .section-main .grid .project .hover-content a {
+  display: none;
+  padding: 20px;
+  text-decoration: none;
+  color: #f07167;
+}
+@media screen and (max-width: 500px) {
+  .portfolio .section-main .grid .project .hover-content a {
+    font-size: 10px;
+    padding: 10px;
+    padding-top: 0;
+  }
+}
+.portfolio .section-main .grid .project:hover .hover-content {
+  height: 100%;
+  display: block;
+}
+.portfolio .section-main .grid .project:hover .hover-content h2, .portfolio .section-main .grid .project:hover .hover-content a {
+  display: block;
 }
 @media screen and (max-width: 500px) {
   .portfolio .section-main .grid {
@@ -172,7 +206,7 @@ section p {
 .project-show .section-header .hikr {
   font-family: "Amatic SC", cursive;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 30px;
 }
 .project-show .section-header .dinder {
   font-family: Arial, Helvetica, sans-serif;
