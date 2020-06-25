@@ -154,14 +154,42 @@ section p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  margin: 5px;
+  margin: 20px 20px 0 20px;
   padding: 5px 8px;
   border: 1px solid black;
   border-radius: 3px;
   background-color: #f07167;
   color: white;
   text-decoration: none;
+}
+.project-show .section-header {
+  display: flex;
+  justify-content: space-between;
+}
+.project-show .section-header .jobr {
+  font-family: "Permanent Marker", cursive;
+}
+.project-show .section-header .hikr {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 36px;
+}
+.project-show .section-header .dinder {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.project-show .section-header .battleships {
+  font-family: "Orbitron", sans-serif;
+}
+.project-show .section-main {
+  margin: 20px 160px 20px 20px;
+  height: 100%;
+  border: 1px solid red;
+  overflow: scroll;
+}
+@media screen and (max-width: 500px) {
+  .project-show .section-main {
+    margin: 18px;
+  }
 }
 
 .contact {

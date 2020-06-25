@@ -147,14 +147,40 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    margin: 5px;
+    margin: 20px 20px 0 20px;
     padding: 5px 8px;
     border: 1px solid black;
     border-radius: 3px;
     background-color: #f07167;
     color: white;
     text-decoration: none;
+  }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    .jobr {
+      font-family: 'Permanent Marker', cursive;
+    }
+    .hikr {
+      font-family: 'Amatic SC', cursive;
+      font-weight: 700;
+      font-size: 36px;
+    }
+    .dinder {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .battleships {
+      font-family: 'Orbitron', sans-serif;
+    }
+  }
+  .section-main {
+    margin: 20px 160px 20px 20px;
+    height: 100%;
+    border: 1px solid red;
+    overflow: scroll;
+    @media screen and (max-width: 500px) {
+      margin: 18px;
+    }
   }
 }
 

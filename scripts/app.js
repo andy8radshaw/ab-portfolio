@@ -1,7 +1,7 @@
 function init() {
   // eslint-disable-next-line no-undef
   new fullpage('#fullpage', {
-
+    licenseKey: '9FC6A3EE-F0B44DE3-95D84BC8-F67C9742',
     // navigation
     menu: '#myMenu',
     lockAnchors: false,
@@ -10,14 +10,16 @@ function init() {
     navigationPosition: 'right',
     navigationTooltips: ['Home', 'About', 'Portfolio', 'Contact'],
     showActiveTooltip: true,
-    slidesNavigation: false,
+    slidesNavigation: true,
 
     // scrolling
     autoScrolling: true,
     scrollingSpeed: 700,
     controlArrows: false,
     touchSensitivity: 10,
-
+    normalScrollElements: '.project-show',
+    // normalScrollElements: '.jobr, .hikr, .dinder, .battleships',
+    
     // Accessibility
     keyboardScrolling: true,
     animateAnchor: false
