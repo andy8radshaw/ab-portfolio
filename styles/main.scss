@@ -29,7 +29,7 @@ nav {
   top: 0px;
   position: absolute;
   z-index: 999;
-  
+
   a {
     display: flex;
     justify-content: center;
@@ -41,12 +41,14 @@ nav {
     background-color: #f07167;
     color: white;
     text-decoration: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
-    &:hover, &:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    &:hover,
+    &:active {
       background-color: black;
       border: 1px solid white;
     }
   }
+
   @media screen and (max-width: 500px) {
     height: 4.5vh;
     margin-left: 0;
@@ -75,7 +77,8 @@ section {
   }
   @media screen and (max-width: 500px) {
     height: 78vh;
-    font-size: 12px;
+    margin-top: 30px;
+    font-size: 14px;
     border-radius: 10px;
     h1 {
       padding: 10px 0 0 10px;
@@ -89,6 +92,18 @@ section {
 .home {
   background-color: black;
   color: white;
+  .typewriter {
+    strong {
+      border-right: 0.05em solid;
+      animation: caret 1s steps(1) infinite;
+      color: #f07167;
+    }
+    @keyframes caret {
+      50% {
+        border-color: transparent;
+      }
+    }
+  }
 }
 
 .about {
@@ -154,13 +169,14 @@ section {
               padding-top: 0;
             }
           }
-          transition: .5s;
+          transition: 0.5s;
         }
         &:hover {
           .hover-content {
             height: 100%;
             display: block;
-            h2, a {
+            h2,
+            a {
               display: block;
             }
           }
@@ -192,7 +208,7 @@ section {
 .project-show {
   background-color: black;
   color: white;
-  
+
   .section-header {
     display: flex;
     justify-content: space-between;
@@ -212,10 +228,10 @@ section {
       }
     }
     .jobr {
-      font-family: 'Permanent Marker', cursive;
+      font-family: "Permanent Marker", cursive;
     }
     .hikr {
-      font-family: 'Amatic SC', cursive;
+      font-family: "Amatic SC", cursive;
       font-weight: 700;
       font-size: 30px;
     }
@@ -223,7 +239,7 @@ section {
       font-family: Arial, Helvetica, sans-serif;
     }
     .battleships {
-      font-family: 'Orbitron', sans-serif;
+      font-family: "Orbitron", sans-serif;
     }
   }
   .section-main {
@@ -264,4 +280,14 @@ section {
 
 .contact {
   background-color: white;
+  .section-main {
+    p {
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #f07167;
+    }
+  }
 }

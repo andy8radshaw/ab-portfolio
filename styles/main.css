@@ -76,7 +76,8 @@ section p {
 @media screen and (max-width: 500px) {
   section {
     height: 78vh;
-    font-size: 12px;
+    margin-top: 30px;
+    font-size: 14px;
     border-radius: 10px;
   }
   section h1 {
@@ -90,6 +91,16 @@ section p {
 .home {
   background-color: black;
   color: white;
+}
+.home .typewriter strong {
+  border-right: 0.05em solid;
+  animation: caret 1s steps(1) infinite;
+  color: #f07167;
+}
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .about {
@@ -170,7 +181,8 @@ section p {
   height: 100%;
   display: block;
 }
-.portfolio .section-main .grid .project:hover .hover-content h2, .portfolio .section-main .grid .project:hover .hover-content a {
+.portfolio .section-main .grid .project:hover .hover-content h2,
+.portfolio .section-main .grid .project:hover .hover-content a {
   display: block;
 }
 @media screen and (max-width: 500px) {
@@ -273,6 +285,14 @@ section p {
 
 .contact {
   background-color: white;
+}
+.contact .section-main p {
+  margin: 0;
+}
+.contact .section-main a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #f07167;
 }
 
 /*# sourceMappingURL=main.css.map */
