@@ -4,6 +4,13 @@ body {
   background-attachment: fixed;
   margin: 0;
   font-family: "Cutive Mono", monospace;
+  letter-spacing: -1px;
+  h1 {
+    letter-spacing: normal;
+  }
+  h2 {
+    letter-spacing: -2px;
+  }
 }
 
 span {
@@ -39,6 +46,8 @@ nav {
   }
   @media screen and (max-width: 500px) {
     height: 4.5vh;
+    margin-left: 0;
+    justify-content: center;
   }
 }
 
@@ -122,6 +131,7 @@ section {
             display: none;
             margin: 0;
             padding: 20px;
+            font-size: 20px;
             @media screen and (max-width: 500px) {
               font-size: 12px;
               padding: 10px;
@@ -176,21 +186,25 @@ section {
 .project-show {
   background-color: black;
   color: white;
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 20px 0 20px;
-    padding: 5px 8px;
-    border: 1px solid black;
-    border-radius: 3px;
-    background-color: #f07167;
-    color: white;
-    text-decoration: none;
-  }
+  
   .section-header {
     display: flex;
     justify-content: space-between;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 20px 0 20px;
+      padding: 5px 8px;
+      border: 1px solid white;
+      border-radius: 3px;
+      background-color: #f07167;
+      color: white;
+      text-decoration: none;
+      @media screen and (max-width: 500px) {
+        margin: 10px;
+      }
+    }
     .jobr {
       font-family: 'Permanent Marker', cursive;
     }
@@ -207,12 +221,36 @@ section {
     }
   }
   .section-main {
-    margin: 20px 160px 20px 20px;
+    margin: 20px 160px 40px 20px;
     height: 100%;
-    border: 1px solid red;
     overflow: scroll;
+    p {
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+      color: #f07167;
+    }
+    .project-images {
+      width: 70vw;
+      margin: 20px;
+      img {
+        width: 100%;
+        padding-bottom: 20px;
+      }
+    }
     @media screen and (max-width: 500px) {
-      margin: 18px;
+      margin: 10px;
+      p {
+        padding: 0 0 10px 0;
+      }
+      .project-images {
+        width: 86vw;
+        margin: 0;
+        img {
+          padding-bottom: 10px;
+        }
+      }
     }
   }
 }

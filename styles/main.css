@@ -4,6 +4,13 @@ body {
   background-attachment: fixed;
   margin: 0;
   font-family: "Cutive Mono", monospace;
+  letter-spacing: -1px;
+}
+body h1 {
+  letter-spacing: normal;
+}
+body h2 {
+  letter-spacing: -2px;
 }
 
 span {
@@ -41,6 +48,8 @@ nav a:hover, nav a:active {
 @media screen and (max-width: 500px) {
   nav {
     height: 4.5vh;
+    margin-left: 0;
+    justify-content: center;
   }
 }
 
@@ -131,6 +140,7 @@ section p {
   display: none;
   margin: 0;
   padding: 20px;
+  font-size: 20px;
 }
 @media screen and (max-width: 500px) {
   .portfolio .section-main .grid .project .hover-content h2 {
@@ -184,21 +194,26 @@ section p {
   background-color: black;
   color: white;
 }
-.project-show a {
+.project-show .section-header {
+  display: flex;
+  justify-content: space-between;
+}
+.project-show .section-header a {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 20px 0 20px;
   padding: 5px 8px;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 3px;
   background-color: #f07167;
   color: white;
   text-decoration: none;
 }
-.project-show .section-header {
-  display: flex;
-  justify-content: space-between;
+@media screen and (max-width: 500px) {
+  .project-show .section-header a {
+    margin: 10px;
+  }
 }
 .project-show .section-header .jobr {
   font-family: "Permanent Marker", cursive;
@@ -215,14 +230,38 @@ section p {
   font-family: "Orbitron", sans-serif;
 }
 .project-show .section-main {
-  margin: 20px 160px 20px 20px;
+  margin: 20px 160px 40px 20px;
   height: 100%;
-  border: 1px solid red;
   overflow: scroll;
+}
+.project-show .section-main p {
+  margin: 0;
+}
+.project-show .section-main a {
+  text-decoration: none;
+  color: #f07167;
+}
+.project-show .section-main .project-images {
+  width: 70vw;
+  margin: 20px;
+}
+.project-show .section-main .project-images img {
+  width: 100%;
+  padding-bottom: 20px;
 }
 @media screen and (max-width: 500px) {
   .project-show .section-main {
-    margin: 18px;
+    margin: 10px;
+  }
+  .project-show .section-main p {
+    padding: 0 0 10px 0;
+  }
+  .project-show .section-main .project-images {
+    width: 86vw;
+    margin: 0;
+  }
+  .project-show .section-main .project-images img {
+    padding-bottom: 10px;
   }
 }
 
