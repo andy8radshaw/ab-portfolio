@@ -119,6 +119,10 @@ section p {
     font-size: 20px;
   }
 }
+.about .section-main a {
+  text-decoration: none;
+  color: #f07167;
+}
 
 .portfolio {
   background-color: black;
