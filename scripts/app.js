@@ -35,15 +35,16 @@ function init() {
 
 
   // * Typewriter code --------
-  const dataText = ['Andy Bradshaw | Software Engineer | London']
+  const dataText = ['Andy Bradshaw', 'Software Engineer', 'London']
+
 
   function typeWriter(text, i, fnCallback) {
     if (i < (text.length)) {
-      document.querySelector('.typewriter').innerHTML = `<span>//</span> ${text.substring(0, i + 1)} <strong aria-hidden="true"></strong>`
+      document.querySelector('.typewriter').innerHTML = `<span>// </span>${text.substring(0, i + 1)} <strong aria-hidden="true"></strong>`
 
       setTimeout(function () {
         typeWriter(text, i + 1, fnCallback)
-      }, 130)
+      }, 100)
     } else if (typeof fnCallback === 'function') {
       setTimeout(fnCallback, 700)
     }
@@ -53,7 +54,7 @@ function init() {
     if (typeof dataText[i] === 'undefined') {
       setTimeout(function () {
         StartTextAnimation(0)
-      }, 50000)
+      }, 8000)
     }
     if (i < dataText.length) {
       typeWriter(dataText[i], 0, function () {
