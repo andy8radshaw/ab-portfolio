@@ -1,5 +1,5 @@
 body {
-  background-image: url("../assets/background-2.png");
+  background-image: url("../assets/background-3.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -130,7 +130,7 @@ section p {
   width: 50vw;
   margin: 20px;
   color: #f07167;
-  font-size: 30px;
+  font-size: 48px;
 }
 @media screen and (max-width: 500px) {
   .about .section-main .technologies {
