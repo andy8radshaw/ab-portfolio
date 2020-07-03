@@ -12,6 +12,9 @@ body {
   h2 {
     letter-spacing: -2px;
   }
+  @media screen and (max-width: 500px) {
+    background-image: url("../assets/background-1-mobile.png");
+  }
 }
 
 span {
