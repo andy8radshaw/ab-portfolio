@@ -75,7 +75,7 @@ section {
     padding: 20px 0 0 20px;
   }
   p {
-    width: 50vw;
+    width: 40vw;
     padding: 0 0 0 20px;
   }
   @media screen and (max-width: 500px) {
@@ -90,6 +90,9 @@ section {
       width: 90%;
     }
   }
+}
+.contact-section {
+  height: 40vh;
 }
 
 .home {
@@ -123,19 +126,90 @@ section {
   background-color: white;
   .section-main {
     margin-right: 10vw;
-    .technologies {
-      width: 50vw;
-      margin: 20px;
-      color: #f07167;
-      font-size: 48px;
-      @media screen and (max-width: 500px) {
-        font-size: 16px;
-        width: 90%;
+    display: flex;
+    .about-me {
+      width: 44vw;
+      .andy-stats {
+        display: flex;
+        
+        img {
+          width: 200px;
+          margin: 20px;
+        }
+        .stats {
+          margin: 20px 0 0 0;
+          p {
+            width: 100%;
+            margin: 0;
+            padding: 5px 0;
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+        color: #f07167;
       }
     }
-    a {
-      text-decoration: none;
-      color: #f07167;
+    .skills {
+      width: 44vw;
+      
+      .technologies {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 20px 0 0 0;
+        .tech-skill {
+          width: 80px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 46px;
+          padding: 10px;
+          color: #f07167;
+          p {
+            font-size: 16px;
+            width: 100%;
+            margin: 5px 0 0 0;
+            padding: 0;
+            text-align: center;
+            color: black;
+          }
+        }
+        @media screen and (max-width: 500px) {
+          
+        }
+      }
+    }
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      overflow: scroll;
+      .skills, .about-me {
+        width: 90%;
+        h1 {
+          margin: 10px 0 0 10px;
+        }
+      }
+      .about-me {
+        .andy-stats {
+          flex-direction: column;
+          .stats {
+            margin: 10px 0 10px 20px ;
+          }
+        }
+      }
+      .skills {
+        .technologies {
+          width: 90%;
+          .tech-skill {
+            font-size: 30px;
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
     }
   }
 }

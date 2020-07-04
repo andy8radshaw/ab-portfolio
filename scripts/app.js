@@ -19,7 +19,7 @@ function init() {
     scrollingSpeed: 700,
     controlArrows: false,
     touchSensitivity: 10,
-    normalScrollElements: '.project-show',
+    normalScrollElements: '.project-show, .about' ,
     // normalScrollElements: '.jobr, .hikr, .dinder, .battleships',
 
     // Accessibility
