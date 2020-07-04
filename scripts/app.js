@@ -59,7 +59,7 @@ function init() {
     if (typeof dataText[i] === 'undefined') {
       setTimeout(function () {
         StartTextAnimation(0)
-      }, 8000)
+      }, 4000)
     }
     if (i < dataText.length) {
       typeWriter(dataText[i], 0, function () {
