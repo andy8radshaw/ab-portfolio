@@ -130,6 +130,8 @@ section p {
 .about .section-main {
   margin-right: 10vw;
   display: flex;
+  overflow: scroll;
+  margin-bottom: 20px;
 }
 .about .section-main .about-me {
   width: 44vw;
