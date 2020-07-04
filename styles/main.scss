@@ -21,19 +21,16 @@ span {
   color: #f07167;
 }
 
-nav {
+ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  margin: 0;
   height: 8vh;
-  margin-left: 20px;
-  overflow: hidden;
-  top: 0px;
   position: absolute;
   z-index: 999;
-
-  a {
+  li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,20 +39,31 @@ nav {
     border: 1px solid black;
     border-radius: 5px;
     background-color: #f07167;
-    color: white;
-    text-decoration: none;
+    a {
+      color: white;
+      text-decoration: none;
+    }
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     &:hover,
     &:active {
       background-color: black;
       border: 1px solid white;
+      a {
+        color: white;
+      }
     }
+  }
+  .active {
+    a{
+      color: black;
+    }
+    background-color: white;
+    border: 1px solid black;
+    
   }
 
   @media screen and (max-width: 500px) {
     height: 4.5vh;
-    margin-left: 0;
-    justify-content: center;
   }
 }
 
@@ -72,11 +80,11 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   h1 {
     margin: 0;
-    padding: 20px 0 0 20px;
+    padding: 20px 0 0 40px;
   }
   p {
     width: 40vw;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 40px;
   }
   @media screen and (max-width: 500px) {
     height: 78vh;
@@ -92,7 +100,7 @@ section {
   }
 }
 .contact-section {
-  height: 40vh;
+  height: 30vh;
 }
 
 .home {
@@ -130,12 +138,14 @@ section {
     overflow: scroll;
     margin-bottom: 20px;
     .about-me {
-      width: 44vw;
+      width: 48vw;
+      padding-left: 20px;
       .andy-stats {
         display: flex;
         img {
           width: 200px;
           margin: 20px;
+          padding-left: 20px;
         }
         .stats {
           margin: 20px 0 0 0;
@@ -152,8 +162,8 @@ section {
       }
     }
     .skills {
-      width: 44vw;
-      
+      width: 48vw;
+      padding-left: 20px;
       .technologies {
         display: flex;
         flex-wrap: wrap;
@@ -183,23 +193,34 @@ section {
     @media screen and (max-width: 500px) {
       flex-direction: column;
       overflow: scroll;
-      .skills, .about-me {
-        width: 90%;
+      .skills,
+      .about-me {
+        width: 94%;
         h1 {
+          margin: 10px 0 0 10px;
+          padding: 0;
+        }
+        p {
+          padding: 0;
           margin: 10px 0 0 10px;
         }
       }
       .about-me {
         .andy-stats {
           flex-direction: column;
+          img {
+            margin: 0;
+            padding: 5px;
+          }
           .stats {
-            margin: 10px 0 10px 20px ;
+            margin: 10px 0 0 10px;
           }
         }
       }
       .skills {
+        margin-top: 20px;
         .technologies {
-          width: 90%;
+          width: 94%;
           .tech-skill {
             font-size: 30px;
             p {
@@ -215,6 +236,11 @@ section {
 .portfolio {
   background-color: black;
   color: white;
+  .section-header {
+    
+      padding-left: 20px;
+
+  }
   .section-main {
     height: 100%;
     width: 100%;
@@ -374,6 +400,12 @@ section {
       text-decoration: none;
       font-weight: bold;
       color: #f07167;
+    }
+    @media screen and (max-width: 500px) {
+      p {
+        margin: 10px;
+        padding: 0;
+      }
     }
   }
 }

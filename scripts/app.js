@@ -7,14 +7,14 @@ function init() {
   new fullpage('#fullpage', {
     licenseKey: '9FC6A3EE-F0B44DE3-95D84BC8-F67C9742',
     // navigation
-    menu: '#myMenu',
-    lockAnchors: false,
+    menu: '#menu',
     anchors: ['home', 'about', 'portfolio', 'contact'],
-    navigation: true,
-    navigationPosition: 'right',
+    lockAnchors: false,
+    // navigation: true,
+    // navigationPosition: 'right',
     navigationTooltips: ['Home', 'About', 'Portfolio', 'Contact'],
     showActiveTooltip: true,
-    slidesNavigation: true,
+    // slidesNavigation: true,
 
     // scrolling
     autoScrolling: true,
@@ -69,6 +69,8 @@ function init() {
   }
 
   StartTextAnimation(0)
+
+
 }
 
 window.addEventListener('DOMContentLoaded', init)

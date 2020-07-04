@@ -23,19 +23,17 @@ span {
   color: #f07167;
 }
 
-nav {
+ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  margin: 0;
   height: 8vh;
-  margin-left: 20px;
-  overflow: hidden;
-  top: 0px;
   position: absolute;
   z-index: 999;
 }
-nav a {
+ul li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,19 +42,29 @@ nav a {
   border: 1px solid black;
   border-radius: 5px;
   background-color: #f07167;
-  color: white;
-  text-decoration: none;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
-nav a:hover, nav a:active {
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+ul li:hover, ul li:active {
   background-color: black;
   border: 1px solid white;
 }
+ul li:hover a, ul li:active a {
+  color: white;
+}
+ul .active {
+  background-color: white;
+  border: 1px solid black;
+}
+ul .active a {
+  color: black;
+}
 @media screen and (max-width: 500px) {
-  nav {
+  ul {
     height: 4.5vh;
-    margin-left: 0;
-    justify-content: center;
   }
 }
 
@@ -72,11 +80,11 @@ section {
 }
 section h1 {
   margin: 0;
-  padding: 20px 0 0 20px;
+  padding: 20px 0 0 40px;
 }
 section p {
   width: 40vw;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 40px;
 }
 @media screen and (max-width: 500px) {
   section {
@@ -94,7 +102,7 @@ section p {
 }
 
 .contact-section {
-  height: 40vh;
+  height: 30vh;
 }
 
 .home {
@@ -134,7 +142,8 @@ section p {
   margin-bottom: 20px;
 }
 .about .section-main .about-me {
-  width: 44vw;
+  width: 48vw;
+  padding-left: 20px;
 }
 .about .section-main .about-me .andy-stats {
   display: flex;
@@ -142,6 +151,7 @@ section p {
 .about .section-main .about-me .andy-stats img {
   width: 200px;
   margin: 20px;
+  padding-left: 20px;
 }
 .about .section-main .about-me .andy-stats .stats {
   margin: 20px 0 0 0;
@@ -156,7 +166,8 @@ section p {
   color: #f07167;
 }
 .about .section-main .skills {
-  width: 44vw;
+  width: 48vw;
+  padding-left: 20px;
 }
 .about .section-main .skills .technologies {
   display: flex;
@@ -188,20 +199,35 @@ section p {
     flex-direction: column;
     overflow: scroll;
   }
-  .about .section-main .skills, .about .section-main .about-me {
-    width: 90%;
+  .about .section-main .skills,
+.about .section-main .about-me {
+    width: 94%;
   }
-  .about .section-main .skills h1, .about .section-main .about-me h1 {
+  .about .section-main .skills h1,
+.about .section-main .about-me h1 {
+    margin: 10px 0 0 10px;
+    padding: 0;
+  }
+  .about .section-main .skills p,
+.about .section-main .about-me p {
+    padding: 0;
     margin: 10px 0 0 10px;
   }
   .about .section-main .about-me .andy-stats {
     flex-direction: column;
   }
+  .about .section-main .about-me .andy-stats img {
+    margin: 0;
+    padding: 5px;
+  }
   .about .section-main .about-me .andy-stats .stats {
-    margin: 10px 0 10px 20px;
+    margin: 10px 0 0 10px;
+  }
+  .about .section-main .skills {
+    margin-top: 20px;
   }
   .about .section-main .skills .technologies {
-    width: 90%;
+    width: 94%;
   }
   .about .section-main .skills .technologies .tech-skill {
     font-size: 30px;
@@ -214,6 +240,9 @@ section p {
 .portfolio {
   background-color: black;
   color: white;
+}
+.portfolio .section-header {
+  padding-left: 20px;
 }
 .portfolio .section-main {
   height: 100%;
@@ -379,6 +408,12 @@ section p {
   text-decoration: none;
   font-weight: bold;
   color: #f07167;
+}
+@media screen and (max-width: 500px) {
+  .contact .section-main p {
+    margin: 10px;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
