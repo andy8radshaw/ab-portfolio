@@ -10,18 +10,15 @@ function init() {
     menu: '#menu',
     anchors: ['home', 'about', 'portfolio', 'contact'],
     lockAnchors: false,
-    // navigation: true,
-    // navigationPosition: 'right',
     navigationTooltips: ['Home', 'About', 'Portfolio', 'Contact'],
     showActiveTooltip: true,
-    // slidesNavigation: true,
 
     // scrolling
     autoScrolling: true,
     scrollingSpeed: 700,
     controlArrows: false,
     touchSensitivity: 10,
-    normalScrollElements: '.project-show, .about',
+    normalScrollElements: '.about, .project-show',
     // normalScrollElements: '.jobr, .hikr, .dinder, .battleships',
 
     // Accessibility
