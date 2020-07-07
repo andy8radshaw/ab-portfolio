@@ -48,11 +48,11 @@ ul li a {
   color: white;
   text-decoration: none;
 }
-ul li:hover, ul li:active {
+ul li:hover {
   background-color: black;
   border: 1px solid white;
 }
-ul li:hover a, ul li:active a {
+ul li:hover a {
   color: white;
 }
 ul .active {
@@ -263,13 +263,13 @@ section p {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   border-radius: 3px;
 }
 .portfolio .section-main .grid .project .hover-content {
   height: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: black;
   transition: 0.5s;
 }
 .portfolio .section-main .grid .project .hover-content h2 {
@@ -409,10 +409,24 @@ section p {
   font-weight: bold;
   color: #f07167;
 }
+.contact .section-main .links {
+  display: flex;
+  margin: 0 0 0 30px;
+  font-size: 40px;
+}
+.contact .section-main .links a {
+  padding: 0 10px;
+}
 @media screen and (max-width: 500px) {
   .contact .section-main p {
     margin: 10px;
     padding: 0;
+  }
+  .contact .section-main .links {
+    margin: 0;
+  }
+  .contact .section-main .links a {
+    margin: 0;
   }
 }
 

@@ -44,8 +44,7 @@ ul {
       text-decoration: none;
     }
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    &:hover,
-    &:active {
+    &:hover {
       background-color: black;
       border: 1px solid white;
       a {
@@ -258,13 +257,13 @@ section {
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
-        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         border-radius: 3px;
         .hover-content {
           // display: none;
           height: 0;
-          background-color: rgba(0, 0, 0, 0.9);
-          color: white;
+          background-color: rgba(255, 255, 255, 0.95);
+          color: black;
           h2 {
             display: none;
             margin: 0;
@@ -401,10 +400,24 @@ section {
       font-weight: bold;
       color: #f07167;
     }
+    .links {
+      display: flex;
+      margin: 0 0 0 30px;
+      font-size: 40px;
+      a {
+        padding: 0 10px;
+      }
+    }
     @media screen and (max-width: 500px) {
       p {
         margin: 10px;
         padding: 0;
+      }
+      .links {
+        margin: 0;
+        a {
+          margin: 0;
+        }
       }
     }
   }
