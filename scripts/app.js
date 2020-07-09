@@ -1,35 +1,69 @@
 function init() {
 
+  const w = window.innerWidth
+
+  if (w < 501) {
+    // eslint-disable-next-line no-undef
+    new fullpage('#fullpage', {
+      licenseKey: '9FC6A3EE-F0B44DE3-95D84BC8-F67C9742',
+      // navigation
+      menu: '#menu',
+      anchors: ['home', 'about', 'portfolio', 'contact'],
+      lockAnchors: false,
+      navigationTooltips: ['Home', 'About', 'Portfolio', 'Contact'],
+      showActiveTooltip: true,
+  
+      // scrolling
+      autoScrolling: true,
+      scrollingSpeed: 700,
+      controlArrows: false,
+      touchSensitivity: 10,
+      normalScrollElements: '.about, .project-show',
+      // normalScrollElements: '.jobr, .hikr, .dinder, .battleships',
+  
+      // Accessibility
+      keyboardScrolling: true,
+      animateAnchor: false
+  
+    })
+  
+    //methods
+    // eslint-disable-next-line no-undef
+    fullpage_api.setAllowScrolling(true)
+  } else {
+    // eslint-disable-next-line no-undef
+    new fullpage('#fullpage', {
+      licenseKey: '9FC6A3EE-F0B44DE3-95D84BC8-F67C9742',
+      // navigation
+      menu: '#menu',
+      anchors: ['home', 'about', 'portfolio', 'contact'],
+      lockAnchors: false,
+      navigationTooltips: ['Home', 'About', 'Portfolio', 'Contact'],
+      showActiveTooltip: true,
+  
+      // scrolling
+      autoScrolling: true,
+      scrollingSpeed: 700,
+      controlArrows: false,
+      touchSensitivity: 10,
+      normalScrollElements: '.project-show',
+      // normalScrollElements: '.jobr, .hikr, .dinder, .battleships',
+  
+      // Accessibility
+      keyboardScrolling: true,
+      animateAnchor: false
+  
+    })
+  
+    //methods
+    // eslint-disable-next-line no-undef
+    fullpage_api.setAllowScrolling(true)
+  }
 
   // * FullPage.JS code --------
 
   // eslint-disable-next-line no-undef
-  new fullpage('#fullpage', {
-    licenseKey: '9FC6A3EE-F0B44DE3-95D84BC8-F67C9742',
-    // navigation
-    menu: '#menu',
-    anchors: ['home', 'about', 'portfolio', 'contact'],
-    lockAnchors: false,
-    navigationTooltips: ['Home', 'About', 'Portfolio', 'Contact'],
-    showActiveTooltip: true,
-
-    // scrolling
-    autoScrolling: true,
-    scrollingSpeed: 700,
-    controlArrows: false,
-    touchSensitivity: 10,
-    normalScrollElements: '.project-show',
-    // normalScrollElements: '.jobr, .hikr, .dinder, .battleships',
-
-    // Accessibility
-    keyboardScrolling: true,
-    animateAnchor: false
-
-  })
-
-  //methods
-  // eslint-disable-next-line no-undef
-  fullpage_api.setAllowScrolling(true)
+  
 
 
 
