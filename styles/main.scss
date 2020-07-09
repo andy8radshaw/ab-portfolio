@@ -53,12 +53,11 @@ ul {
     }
   }
   .active {
-    a{
+    a {
       color: black;
     }
     background-color: white;
     border: 1px solid black;
-    
   }
 
   @media screen and (max-width: 500px) {
@@ -99,7 +98,11 @@ section {
   }
 }
 .contact-section {
-  height: 30vh;
+  height: 40vh;
+}
+.home {
+  margin-top: 8vh;
+  height: 24vh;
 }
 
 .home {
@@ -119,7 +122,8 @@ section {
     }
   }
   h1 {
-    margin-left: 40%;
+    margin: 0 60px;
+    padding: 0;
   }
   @media screen and (max-width: 500px) {
     justify-content: flex-start;
@@ -131,18 +135,23 @@ section {
 
 .about {
   background-color: white;
+  a {
+    text-decoration: none;
+    color: #f07167;
+  }
   .section-main {
     margin-right: 10vw;
     display: flex;
     overflow: scroll;
     margin-bottom: 20px;
     .about-me {
-      width: 48vw;
+      width: 50vw;
       padding-left: 20px;
       .andy-stats {
         display: flex;
         img {
           width: 200px;
+          height: 200px;
           margin: 20px;
           padding-left: 20px;
         }
@@ -152,15 +161,23 @@ section {
             width: 100%;
             margin: 0;
             padding: 5px 0;
+            font-size: 12px;
           }
         }
       }
-      a {
-        text-decoration: none;
+      .read-more-btn {
+        color: #f07167;
+      }
+    }
+    .read-more {
+      display: none;
+      margin: 50px 0 0 0;
+      .show-skills-btn {
         color: #f07167;
       }
     }
     .skills {
+      // display: none;
       width: 48vw;
       padding-left: 20px;
       .technologies {
@@ -236,9 +253,7 @@ section {
   background-color: black;
   color: white;
   .section-header {
-    
-      padding-left: 20px;
-
+    padding-left: 20px;
   }
   .section-main {
     height: 100%;

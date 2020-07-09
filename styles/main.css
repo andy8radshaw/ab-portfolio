@@ -102,7 +102,12 @@ section p {
 }
 
 .contact-section {
-  height: 30vh;
+  height: 40vh;
+}
+
+.home {
+  margin-top: 8vh;
+  height: 24vh;
 }
 
 .home {
@@ -121,7 +126,8 @@ section p {
   }
 }
 .home h1 {
-  margin-left: 40%;
+  margin: 0 60px;
+  padding: 0;
 }
 @media screen and (max-width: 500px) {
   .home {
@@ -135,6 +141,10 @@ section p {
 .about {
   background-color: white;
 }
+.about a {
+  text-decoration: none;
+  color: #f07167;
+}
 .about .section-main {
   margin-right: 10vw;
   display: flex;
@@ -142,7 +152,7 @@ section p {
   margin-bottom: 20px;
 }
 .about .section-main .about-me {
-  width: 48vw;
+  width: 50vw;
   padding-left: 20px;
 }
 .about .section-main .about-me .andy-stats {
@@ -150,6 +160,7 @@ section p {
 }
 .about .section-main .about-me .andy-stats img {
   width: 200px;
+  height: 200px;
   margin: 20px;
   padding-left: 20px;
 }
@@ -160,9 +171,16 @@ section p {
   width: 100%;
   margin: 0;
   padding: 5px 0;
+  font-size: 12px;
 }
-.about .section-main .about-me a {
-  text-decoration: none;
+.about .section-main .about-me .read-more-btn {
+  color: #f07167;
+}
+.about .section-main .read-more {
+  display: none;
+  margin: 50px 0 0 0;
+}
+.about .section-main .read-more .show-skills-btn {
   color: #f07167;
 }
 .about .section-main .skills {

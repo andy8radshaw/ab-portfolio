@@ -18,7 +18,7 @@ function init() {
     scrollingSpeed: 700,
     controlArrows: false,
     touchSensitivity: 10,
-    normalScrollElements: '.about, .project-show',
+    normalScrollElements: '.project-show',
     // normalScrollElements: '.jobr, .hikr, .dinder, .battleships',
 
     // Accessibility
@@ -68,6 +68,27 @@ function init() {
   StartTextAnimation(0)
 
 
+  // * Read more control --------
+
+  const readMoreBtn = document.querySelector('.read-more-btn')
+  const readMoreContent = document.querySelector('.read-more')
+  const showSkillsBtn = document.querySelector('.show-skills-btn')
+  const skillsContent = document.querySelector('.skills')
+
+  function handleReadMore() {
+    readMoreContent.style.display = 'block'
+    skillsContent.style.display = 'none'
+    readMoreBtn.style.display = 'none'
+  }
+
+  function handleShowSkills() {
+    readMoreContent.style.display = 'none'
+    skillsContent.style.display = 'block'
+    readMoreBtn.style.display = 'block'
+  }
+
+  readMoreBtn.addEventListener('click', handleReadMore)
+  showSkillsBtn.addEventListener('click', handleShowSkills)
 }
 
 window.addEventListener('DOMContentLoaded', init)
